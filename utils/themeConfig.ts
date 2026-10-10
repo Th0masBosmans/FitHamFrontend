@@ -93,16 +93,6 @@ const theme = {
     /** Yellow accent bar height from md and up */
     accentBarHeightDesktop: 'md:h-16',
 
-    // ── Sponsor image sizing ────────────────────────────────
-    /** Sponsor image width */
-    sponsorImageWidth: 'w-[90%]',
-    /** Sponsor image height */
-    sponsorImageHeight: 'h-[75%]',
-    /** Minimum sponsor image width */
-    sponsorImageMinWidth: 'min-w-[320px]',
-    /** Minimum sponsor image height */
-    sponsorImageMinHeight: 'min-h-[220px]',
-
     // ── Rangschikking table layout ───────────────────────────
     /** Vertical space between table rows (Tailwind class) */
     tableRowSpacing: 'space-y-2',

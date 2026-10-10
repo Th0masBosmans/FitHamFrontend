@@ -12,7 +12,7 @@ type Props = {
 const CarouselSponsorItem: React.FC<Props> = ({ images }) => {
   const image = images[0];
   const { basePath } = useRouter();
-  const { colors: c, gradient: g, layout: l } = theme;
+  const { colors: c, gradient: g } = theme;
   const [loaded, setLoaded] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
   const prevImage = useRef(image);
@@ -51,7 +51,7 @@ const CarouselSponsorItem: React.FC<Props> = ({ images }) => {
           ref={imgRef}
           src={image}
           alt="Sponsor"
-          className={`object-contain ${l.sponsorImageHeight} ${l.sponsorImageWidth} ${l.sponsorImageMinHeight} ${l.sponsorImageMinWidth} drop-shadow-lg`}
+          className="absolute inset-0 h-full w-full object-cover"
           style={{
             opacity: loaded ? 1 : 0,
             transition: 'opacity 0.35s ease-in',
